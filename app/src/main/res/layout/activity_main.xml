@@ -33,7 +33,9 @@
         android:id="@+id/gridView1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:numColumns="4">
+        android:numColumns="4"
+        android:layout_weight="1.0"
+        android:fitsSystemWindows="true">
     </GridView>
 
 </LinearLayout>
