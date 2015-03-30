@@ -5,9 +5,10 @@
     <string name="action_settings">Settings</string>
     <string name="flip_count_text">Flip Count: </string>
     <string name="restart">Restart</string>
+    <string name="game_over_title">Game Over</string>
     <string name="congratulations">Congratulations!!!!!</string>
-    <string name="yourFlipCountIs">Your flipcount is</string>
-    <string name="new_game_button_label">NEW GAME</string>
-    <string name="quit_game_button_label">QUIT GAME</string>
+    <string name="game_over_message">Your flip count is: </string>
+    <string name="confirm_new_game_button">NEW GAME</string>
+    <string name="confirm_quit_game_button">QUIT GAME</string>
 
 </resources>

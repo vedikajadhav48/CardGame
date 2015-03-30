@@ -21,8 +21,7 @@ import java.util.Random;
 public class ImageAdapter extends ArrayAdapter<BlankImageWithFaceImage>{
 
     private Context mContext;
-    //cardArray stores positions of the two cards selected for comparison
-    private ArrayList<BlankImageWithFaceImage> cardArray = new ArrayList<BlankImageWithFaceImage>();
+
     //cardStatus is used to check if the card has already been matched
     private boolean[] cardStatus = new boolean[24];
     //cardsMatched is used to check end of the game
@@ -30,7 +29,7 @@ public class ImageAdapter extends ArrayAdapter<BlankImageWithFaceImage>{
 
     public ImageAdapter(ArrayList<BlankImageWithFaceImage> mCardArrayList, Context context) {
         super(context.getApplicationContext(), 0, mCardArrayList);
-        cardArray = mCardArrayList;
+       // cardArray = mCardArrayList;
         mContext = context;
         //used to show up random images in gridView
         Random rnd = new Random();

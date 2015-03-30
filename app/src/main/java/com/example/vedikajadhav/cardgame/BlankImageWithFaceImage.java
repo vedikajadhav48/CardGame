@@ -7,7 +7,6 @@ public class BlankImageWithFaceImage {
     private int blankImageId;
     private int faceImageId;
 
-
    public BlankImageWithFaceImage(int blankId, int faceId) {
         blankImageId = blankId;
         faceImageId = faceId;
