@@ -19,13 +19,7 @@ import java.util.Random;
  * Created by Vedika Jadhav on 3/24/2015.
  */
 public class ImageAdapter extends ArrayAdapter<BlankImageWithFaceImage>{
-
     private Context mContext;
-
-    //cardStatus is used to check if the card has already been matched
-    private boolean[] cardStatus = new boolean[24];
-    //cardsMatched is used to check end of the game
-    private int cardsMatched = 0;
 
     public ImageAdapter(ArrayList<BlankImageWithFaceImage> mCardArrayList, Context context) {
         super(context.getApplicationContext(), 0, mCardArrayList);
@@ -45,32 +39,14 @@ public class ImageAdapter extends ArrayAdapter<BlankImageWithFaceImage>{
     @Override
     // create a new ImageView for each item referenced by the Adapter
     public View getView(int position, View convertView, ViewGroup parent) {
-        /*ImageView imageView;
-        if (convertView == null) { // if it's not recycled, initialize some
-            // attributes
-            imageView = new ImageView(mContext);
-            imageView.setLayoutParams(new GridView.LayoutParams(50, 50));
-            imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
-            imageView.setPadding(5, 5, 5, 5);
-        } else {
-            imageView = (ImageView) convertView;
-        }
-        imageView.setImageResource(cardArray.get(position).getBlankImageId());
-        return imageView;*/
         if(convertView == null){
             convertView = ((Activity)mContext).getLayoutInflater().inflate(R.layout.grid_item, null);
         }
-
         //Configure the view for this Card(BlankImageWithFaceImage)
         BlankImageWithFaceImage blankImageWithFaceImage = getItem(position);
-
         ImageView blankImage = (ImageView)convertView.findViewById(R.id.grid_item_blank_image);
-       // blankImage.setImageResource(R.drawable.images);
         blankImage.setImageResource(blankImageWithFaceImage.getBlankImageId());
-
-       // ImageView faceImage = (ImageView)convertView.findViewById(R.id.grid_item_face_image);
         blankImage.setBackgroundResource(blankImageWithFaceImage.getFaceImageId());
-
         return convertView;
     }
 
@@ -109,15 +85,5 @@ public class ImageAdapter extends ArrayAdapter<BlankImageWithFaceImage>{
            // MainActivity.flipCount--;
         }
         return;
-    }
-
-    public void restoreImageIds(int position) {
-        int bId = imageIds[position].getBlankImageId();
-        imageIds[position].setBlankImageId(imageIds[position].getFaceImageId());
-        imageIds[position].setFaceImageId(bId);
-    }
-
-    public int getCardsMatched() {
-        return cardsMatched;
     }*/
 }

@@ -114,7 +114,7 @@ public class MainActivity extends ActionBarActivity implements AdapterView.OnIte
         alertDialogBuilder.setTitle(R.string.game_over_title);
         alertDialogBuilder.setMessage(R.string.game_over_message);
 
-        // set positive button: Yes message
+        // set positive button: New Game message
         alertDialogBuilder.setPositiveButton(R.string.confirm_new_game_button,new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog,int id) {
                 /*isDateSet = true;
@@ -132,7 +132,7 @@ public class MainActivity extends ActionBarActivity implements AdapterView.OnIte
                         Toast.LENGTH_LONG).show();
             }
         });
-        // set negative button: No message
+        // set negative button: Quit Game message
         alertDialogBuilder.setNegativeButton(R.string.confirm_quit_game_button,new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog,int id) {
                 // cancel the alert box and put a Toast to the user
@@ -196,27 +196,5 @@ public class MainActivity extends ActionBarActivity implements AdapterView.OnIte
                 cardArrayList.add(new BlankImageWithFaceImage(R.drawable.images, faceCardList[j]));
             }
         }
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
     }
 }
