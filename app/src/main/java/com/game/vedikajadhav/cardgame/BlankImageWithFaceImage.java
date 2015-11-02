@@ -1,4 +1,4 @@
-package com.example.vedikajadhav.cardgame;
+package com.game.vedikajadhav.cardgame;
 
 /**
  * Created by Vedika Jadhav on 3/28/2015.

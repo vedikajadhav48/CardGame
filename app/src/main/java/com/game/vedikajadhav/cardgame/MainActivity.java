@@ -1,4 +1,4 @@
-package com.example.vedikajadhav.cardgame;
+package com.game.vedikajadhav.cardgame;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -38,16 +38,17 @@ public class MainActivity extends ActionBarActivity implements AdapterView.OnIte
         flipCountEditText.setText("" +flipCount);
 
         GridView grid = (GridView) findViewById(R.id.gridView1);
-        /*createCardArrayList(cardArrayList);*/
+        createCardArrayList(cardArrayList);
         imageAdapter = new ImageAdapter(cardArrayList, this);
 
-        Object object = getLastCustomNonConfigurationInstance();
+        /*Object object = getLastCustomNonConfigurationInstance();
         if(null != object){
             imageAdapter = (ImageAdapter)object;
         }
         else{
             createCardArrayList(cardArrayList);
-        }
+        }*/
+        //imageAdapter.notifyDataSetChanged();
         grid.setAdapter(imageAdapter);
         grid.setOnItemClickListener(this);
     }

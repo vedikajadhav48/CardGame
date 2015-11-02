@@ -1,4 +1,4 @@
-package com.example.vedikajadhav.cardgame;
+package com.game.vedikajadhav.cardgame;
 
 import android.app.Activity;
 import android.content.Context;
@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
+
 import java.util.ArrayList;
 import java.util.Random;
 
