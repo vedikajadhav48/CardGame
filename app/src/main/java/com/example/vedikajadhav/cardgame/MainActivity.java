@@ -4,18 +4,16 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
-import android.content.res.Configuration;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.util.Log;
+import android.support.v7.app.ActionBarActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.EditText;
 import android.widget.GridView;
+
 import java.util.ArrayList;
 
 public class MainActivity extends ActionBarActivity implements AdapterView.OnItemClickListener {
-    private static final String TAG = "MainActivity";
     private static int flipCount = 0;
     private ImageAdapter imageAdapter;
     private Integer[] faceCardList = {R.drawable.club2, R.drawable.club8, R.drawable.diamond6, R.drawable.diamond9, R.drawable.diamond_king,
